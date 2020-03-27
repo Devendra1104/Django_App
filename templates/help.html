@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+                Kasie ho Bhai ???
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    
+        <body>
+            
+            <div class="container">
+
+                <div class="jumbotron"> 
+                        <h1>Hello these are the Users !!</h1>
+                        <ol class="list-group">  {% for n in user_records %} 
+                            <li class="list-group-item active">User Info of {{ n.fname }}</li>  
+                            <ul>
+                                <li class="list-group-item"><strong>First Name:</strong>{{ n.fname }}</li>
+                                <li class="list-group-item"><strong>Second Name:</strong> {{ n.lname }}</li>
+                                <li class="list-group-item"><strong>Email:</strong> {{ n.emails }}</li>
+                            </ul><br>
+                            {% endfor %}
+                        </ol>
+                    </div>
+            </div>        
+                  
+                
+            
+    
+        </body>
+    
+ </html>
