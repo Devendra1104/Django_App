@@ -1,6 +1,4 @@
-#SuperUser: 
-# user: admin
-# pass : Admin@1234
+
 from django.db import models
 
 class User(models.Model):
